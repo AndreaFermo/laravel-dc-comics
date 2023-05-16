@@ -11,6 +11,7 @@
             <div class="card-body">
                 <h3 class="card-title mb-3">{{$comic->series}}</h3>
                 <h4 class="card-title mb-3">{{$comic->title}}</h4>
+                <p class="card-text">{{$comic->sale_date}}</p>
                 <h6 class="card-text">{{$comic->price}}</h6>
                 <p class="card-text">{{$comic->description}}</p>
                 <a href="{{route('comics.index')}}" class="btn btn-info">Torna alla lista fumetti</a>
