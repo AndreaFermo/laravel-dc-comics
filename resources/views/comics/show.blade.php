@@ -14,7 +14,12 @@
                 <p class="card-text">{{$comic->sale_date}}</p>
                 <h6 class="card-text">{{$comic->price}}</h6>
                 <p class="card-text">{{$comic->description}}</p>
-                <a href="{{route('comics.index')}}" class="btn btn-info">Torna alla lista fumetti</a>
+                <a href="{{route('comics.index')}}" class="btn btn-info mb-3">Torna alla lista fumetti</a>
+                <form action="{{route('comics.destroy', ['comic' => $comic->id])}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Cancella Articolo</button>
+                </form>
             </div>
         </div>
     </div>
