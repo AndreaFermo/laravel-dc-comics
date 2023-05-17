@@ -16,10 +16,9 @@ $(document).ready(function () {
             text: "Se lo cancelli lo perderai.",
             icon: "warning",
             type: "warning",
-            buttons: ["Cancel", "Yes!"],
+            buttons: ["Torna indietro", "Cancella!"],
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
         }).then((willDelete) => {
             if (willDelete) {
                 form.submit();
