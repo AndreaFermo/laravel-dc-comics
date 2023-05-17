@@ -19,6 +19,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Cancella Articolo</button>
+                    
                 </form>
             </div>
         </div>
