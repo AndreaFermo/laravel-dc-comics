@@ -13,6 +13,7 @@
                             <h4 class="card-title mb-3">{{$comic->title}}</h4>
                             <h6 class="card-text">{{$comic->price}}</h6>
                             <a href="{{route('comics.show', ['comic' => $comic->id])}}" class="btn btn-primary">Info fumetto</a>
+                            <a href="{{route('comics.edit', ['comic' => $comic->id])}}" class="btn btn-secondary">Modifica</a>
                         </div>
                     </div>
                 </div>
